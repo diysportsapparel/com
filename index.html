@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="Explore the DIY SPORTS product catalog online.">
+  <title>DIY SPORTS Product Catalog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="reader-shell" class="reader-shell intro-loading">
+    <div id="site-intro" class="site-intro" role="status" aria-live="polite" aria-label="Loading product catalog">
+      <div class="intro-card">
+        <img src="assets/diy-logo.png" alt="DIY SPORTS GEAR">
+        <div class="intro-loader" aria-hidden="true"><span></span></div>
+        <p>LOADING PRODUCT CATALOG</p>
+      </div>
+    </div>
+    <header class="reader-header">
+      <div class="logo-crop" aria-label="DIY SPORTS GEAR"><img src="assets/diy-logo.png" alt="DIY SPORTS GEAR"></div>
+      <div class="document-title">
+        <h1>DIY SPORTS <span>PRODUCT CATALOG</span></h1>
+        <p><span id="page-label">Cover</span> <i></i> 19 PAGES <i></i> <b id="playback-status" class="playback-status is-auto">AUTO · 2.5S</b></p>
+      </div>
+      <button id="header-thumbs" class="header-action" aria-label="Open page thumbnails">▦</button>
+    </header>
+
+    <section class="reader-stage" aria-label="DIY SPORTS digital product catalog">
+      <button id="stage-prev" class="turn-button turn-left" aria-label="Previous page" disabled>‹</button>
+      <div id="book-frame" class="book-engine-frame is-cover">
+        <div id="book" class="book-engine pageflip-mount"></div>
+        <div id="hd-guard" class="hd-guard" aria-hidden="true"><span></span>HD</div>
+        <div id="drag-handle" class="book-drag-handle" aria-hidden="true"></div>
+        <div id="loading" class="book-loading"><span></span>Preparing catalog</div>
+      </div>
+      <button id="stage-next" class="turn-button turn-right" aria-label="Next page">›</button>
+      <div class="drag-hint" aria-hidden="true">Hold Ctrl + drag to move · Scroll to zoom</div>
+      <div class="swipe-hint" aria-hidden="true">Swipe to turn · Pinch to zoom · Drag to move</div>
+    </section>
+
+    <aside id="drawer" class="thumbnail-drawer" aria-hidden="true">
+      <div class="drawer-heading"><strong>Page Preview</strong><span>19 pages</span><button id="close-drawer" aria-label="Close page preview">×</button></div>
+      <div id="thumbnail-list" class="thumbnail-list"></div>
+    </aside>
+
+    <nav class="reader-toolbar" aria-label="Reading tools">
+      <button id="toolbar-thumbs" aria-label="Page thumbnails" title="Page thumbnails">▦</button>
+      <span class="toolbar-divider"></span>
+      <button id="toolbar-prev" aria-label="Previous page" title="Previous page" disabled>‹</button>
+      <button id="page-readout" class="page-readout" aria-label="Select page">1 / 19</button>
+      <button id="toolbar-next" aria-label="Next page" title="Next page">›</button>
+      <span class="toolbar-divider"></span>
+      <button id="share" aria-label="Share catalog" title="Share">↗</button>
+      <a href="assets/downloads/DIY-SPORTS-Catalog.pdf" download aria-label="Download PDF" title="Download PDF">⇩</a>
+      <button id="zoom-out" aria-label="Zoom out" title="Zoom out">−</button>
+      <span id="zoom-readout" class="zoom-readout">100%</span>
+      <button id="zoom-in" aria-label="Zoom in" title="Zoom in">＋</button>
+      <button id="fullscreen" aria-label="Read in fullscreen" title="Fullscreen">⛶</button>
+    </nav>
+    <div id="notice" class="notice" role="status" hidden></div>
+  </main>
+  <script src="vendor/page-flip.browser.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
